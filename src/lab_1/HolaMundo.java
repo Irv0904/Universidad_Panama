@@ -1,4 +1,4 @@
-package lab_1.HolaMundo;
+package lab_1;
 public class HolaMundo
 {
     public static void main(String[] args)
