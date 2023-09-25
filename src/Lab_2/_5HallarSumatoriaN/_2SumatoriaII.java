@@ -1,25 +1,30 @@
 package Lab_2._5HallarSumatoriaN;
-import java.io.*;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-public class SumatoriaII
+public class _2SumatoriaII
 {
     static int n;
     static long sum; //declaramos sum como entero largo
 
     static long SumatoriaII (int N)
     {
-        int i = 1, c = 6;
+        int i = 3; //c = 3;
         long S = 0, T;
 
-        while (i <= N)
+        while (i <= N )
         {
-            T = i * c;
-            S = S + T;
-            c++;
+            if (i %2 != 0)
+            {
+                T = i;
+                S = S + T;
+                //c++;
+
+                System.out.print (T + " + ");
+            }
             i++;
-            System.out.print(i + "*"+c+"\n");
-            System.out.print (T + " + ");
         }
         return S;
     }
@@ -29,7 +34,7 @@ public class SumatoriaII
         InputStreamReader isr = new InputStreamReader (System.in);
         BufferedReader br = new BufferedReader (isr);
 
-        System.out.println (" SUMATORIA DE  1x6 + 2x7 + 3x8 + 4x9 + 5x10 ...");
+        System.out.println (" SUMATORIA DE  2x3 + 3x4 + 4x5 + 5x6 + 6x7 + ...");
         System.out.println ("Cuantos terminos desea sumar....");
         dato = br.readLine ();
         n = Integer.parseInt (dato);
