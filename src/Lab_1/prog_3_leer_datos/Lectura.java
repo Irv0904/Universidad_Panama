@@ -1,4 +1,4 @@
-package Lab_2.prog_3_leer_datos;
+package Lab_1.prog_3_leer_datos;
 import java.util.Scanner;
 
 public class Lectura

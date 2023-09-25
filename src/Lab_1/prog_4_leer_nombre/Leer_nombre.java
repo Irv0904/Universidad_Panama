@@ -1,4 +1,4 @@
-package Lab_2.prog_4_leer_nombre;
+package Lab_1.prog_4_leer_nombre;
 import java.util.Scanner;
 
 public class Leer_nombre 

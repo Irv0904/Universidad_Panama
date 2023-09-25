@@ -1,4 +1,4 @@
-package Lab_2.prog_1_factorial;
+package Lab_1.prog_1_factorial;
 import java.util.Scanner;
 
 
