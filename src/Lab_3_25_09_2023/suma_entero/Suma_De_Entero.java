@@ -11,7 +11,7 @@ public class Suma_De_Entero
         {
             if(c % 2 == 0)
             {
-                System.out.print (c+"\t");
+                System.out.print (c+"\n");
                 suma = suma + c;
             }
         }

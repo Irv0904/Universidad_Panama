@@ -1,4 +1,4 @@
-package Lab_2._3Sumatarias;
+package Lab_3_25_09_2023.Lab_2._3Sumatarias;
 
 //PROGRAMA PARA CALCULAR LA SUMATORIA III
 import java.io.*;

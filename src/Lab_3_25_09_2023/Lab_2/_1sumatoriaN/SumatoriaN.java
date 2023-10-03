@@ -1,5 +1,5 @@
 //PROGRAMA PARA CALCULAR LA SUMATORIA
-package Lab_2._1sumatoriaN;
+package Lab_3_25_09_2023.Lab_2._1sumatoriaN;
 import java.io.*;
 class SumatoriaN
 {

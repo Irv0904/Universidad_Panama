@@ -10,7 +10,7 @@ public class MUltiplos_de_3
         {
             if(c % 3 == 0)
             {
-            System.out.print (c+"\t");
+            System.out.print (c+"\n");
             suma = suma + c;
             }
         }

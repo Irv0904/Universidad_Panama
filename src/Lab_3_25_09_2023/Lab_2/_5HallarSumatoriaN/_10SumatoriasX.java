@@ -1,4 +1,4 @@
-package Lab_2._5HallarSumatoriaN;
+package Lab_3_25_09_2023.Lab_2._5HallarSumatoriaN;
 
 import java.io.IOException;
 
