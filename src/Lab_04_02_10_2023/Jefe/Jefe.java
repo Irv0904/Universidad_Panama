@@ -1,4 +1,4 @@
-package Lab_04_02_10_2023.Jefe;
+/*package Lab_04_02_10_2023.Jefe;
 import Lab_04_02_10_2023.Empleado.Empleado;
 public class Jefe extends Empleado{
     private int bono;
@@ -17,4 +17,4 @@ public class Jefe extends Empleado{
 
 
 }
-
+*/
