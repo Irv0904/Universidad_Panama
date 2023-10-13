@@ -1,4 +1,4 @@
-package Lab_1.prog_3_leer_datos.prog_4_leer_nombre;
+package Lab_01_18_09_2023.prog_4_leer_nombre;
 import java.util.Scanner;
 
 public class Leer_nombre 

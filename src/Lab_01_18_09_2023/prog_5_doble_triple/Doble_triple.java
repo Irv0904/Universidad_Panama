@@ -1,4 +1,4 @@
-package Lab_1.prog_3_leer_datos.prog_5_doble_triple;
+package Lab_01_18_09_2023.prog_5_doble_triple;
 import java.util.Scanner;
 
 public class Doble_triple {

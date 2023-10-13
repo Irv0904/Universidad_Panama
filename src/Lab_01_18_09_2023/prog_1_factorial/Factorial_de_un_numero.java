@@ -1,4 +1,4 @@
-package Lab_1.prog_1_factorial;
+package Lab_01_18_09_2023.prog_1_factorial;
 import java.util.Scanner;
 
 
