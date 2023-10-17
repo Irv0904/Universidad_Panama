@@ -1,5 +1,4 @@
 package documentos;
-import vehiculo.Practicas;
 
 import java.util.*;
 
