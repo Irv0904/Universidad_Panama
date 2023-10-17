@@ -12,7 +12,7 @@ public class Main
 
         Documento misDocumentos[] = new Documento[3];
 
-        System.out.println("Seleccione el tipo de documento quiere:\n1-Carta\n2-Informe\n3-Memo\n4-Los tres documentos\nRespuesta:");
+        System.out.println("Seleccione el tipo de documento que necesita leer:\n1-Carta\n2-Informe\n3-Memo\n4-Los tres documentos\nRespuesta:");
         tipo_documento = teclado.nextInt();
         if(tipo_documento == 1)
         {
