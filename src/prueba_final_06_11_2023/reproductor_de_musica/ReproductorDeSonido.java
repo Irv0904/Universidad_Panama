@@ -1,4 +1,5 @@
 package prueba_final_06_11_2023.reproductor_de_musica;
+
 import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
@@ -147,7 +148,7 @@ class Ventana extends JFrame {
         panel = new JPanel();
         panel.setBackground(Color.BLUE);
         panel.setLayout(null );
-        panel.setBounds(0, 0, 1000, 1000);
+        panel.setSize(2000, 2000);
         getContentPane().add(panel);
     }
 
