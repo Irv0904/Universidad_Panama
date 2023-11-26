@@ -7,7 +7,8 @@ public class CalculadoraMain extends JFrame{
     JPanel texto; 
     JTextField muestra;
     Calculadora actionE;
-    
+
+    //PARTE DE YAIR
     public CalculadoraMain(String titulo){
         super(titulo); 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -38,6 +39,7 @@ public class CalculadoraMain extends JFrame{
         add(texto, BorderLayout.NORTH);
         texto.setBackground(Color.DARK_GRAY);
 
+        //PARTE DE IRVING
         //texto de los botones
         String[] bt = {"9", "8","7", "/",
                        "6", "5", "4", "*",
