@@ -61,11 +61,4 @@ public class CalculadoraMain extends JFrame{
         setSize(300, 400);
         setResizable(false); 
     }
-    
-    
-    public static void main(String[] args)
-    {
-        JFrame nuevo = new CalculadoraMain("Calculadora");
-        nuevo.setVisible(true); 
-    }
 }
