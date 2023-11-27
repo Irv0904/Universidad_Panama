@@ -6,8 +6,8 @@ import java.awt.event.*;
 public class Calculadora implements ActionListener{
     JTextField campo;
     //creamos 3 variables, un string y dos double.
-    String operador = ""; 
-    double num = 0.0; 
+    String operador = "";
+    double num = 0.0;
     double num2 = 0.0;
     public Calculadora(JTextField campo){
         this.campo = campo; 
@@ -58,11 +58,20 @@ public class Calculadora implements ActionListener{
             //si es ogual muestra el resultado
             campo.setText(Double.toString(resultado));
             //si es boton c , limpia todo
-        } else if(accion.equals("C")){
+
+        }
+        else if (accion.equals("Ce")) {
+            String textoActual = campo.getText();
+            if (!textoActual.isEmpty()) {
+                campo.setText(textoActual.substring(0, textoActual.length() - 1));
+            }
+            System.out.println("Botón Ce presionado");
+        }else if(accion.equals("C")){
             campo.setText(""); 
             operador = ""; 
             num = 0.0; 
-            num2 = 0.0; 
+            num2 = 0.0;
         }
     }
+
 }

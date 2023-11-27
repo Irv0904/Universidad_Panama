@@ -19,15 +19,30 @@ public class CalculadoraMain extends JFrame{
         Areabt.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         add(Areabt, BorderLayout.CENTER); 
         Areabt.setBackground(Color.darkGray);
+
         JButton btclear = new JButton("C");
-        add(btclear, BorderLayout.SOUTH);
         btclear.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         btclear.setBackground(Color.GRAY);
-        btclear.setBorderPainted(false); 
+        btclear.setBorderPainted(false);
         btclear.setForeground(Color.WHITE);
         btclear.setFont(new Font("Arial", Font.BOLD, 15));
-        
-        
+
+        // Botón para eliminar un carácter (<-) con etiqueta "Ce"
+        JButton btborrar = new JButton("Ce");
+        btborrar.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        btborrar.setFont(new Font("Arial", Font.PLAIN, 15));
+        btborrar.setBackground(Color.gray);
+        btborrar.setForeground(Color.WHITE);
+
+        // Panel para los botones C y Ce
+        JPanel bottomPanel = new JPanel(new GridLayout(1, 2,5,5));
+        bottomPanel.setBackground(Color.DARK_GRAY);
+        bottomPanel.add(btclear);
+        bottomPanel.add(btborrar);
+
+        // Agregar el panel al área de botones
+        add(bottomPanel, BorderLayout.SOUTH);
+
         //panel de texto
         texto = new JPanel();
         texto.setLayout(new BorderLayout(5,5));
@@ -58,6 +73,7 @@ public class CalculadoraMain extends JFrame{
 
         }
         btclear.addActionListener(actionE);
+        btborrar.addActionListener(actionE);
         
         //pack(); 
         setSize(300, 400);
