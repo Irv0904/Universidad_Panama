@@ -2,14 +2,14 @@ package proyectoCalculadora;
 import java.awt.*;
 import javax.swing.*;
 
-public class CalculadoraMain extends JFrame{
+public class FrontCalculadora extends JFrame{
     JPanel Areabt; 
     JPanel texto; 
     JTextField muestra;
-    Calculadora actionE;
+    BackCalculadora actionE;
 
     //PARTE DE YAIR
-    public CalculadoraMain(String titulo){
+    public FrontCalculadora(String titulo){
         super(titulo); 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout()); //le da a la clase la disposición de los elementos 
@@ -61,7 +61,7 @@ public class CalculadoraMain extends JFrame{
                        "3", "2", "1", "-",
                        "0", ".", "=", "+"
         }; 
-        actionE = new Calculadora(muestra);
+        actionE = new BackCalculadora(muestra);
         for(String botones : bt){
             JButton botonesPanel = new JButton(botones);
             botonesPanel.setBorderPainted(false);
