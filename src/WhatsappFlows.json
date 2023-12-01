@@ -1,0 +1,53 @@
+{
+    "version": "2.1",
+    "screens": [{
+        "id": "DETAILS",
+        "title": "Get help",
+        "data": {},
+        "terminal": true,
+        "layout": {
+            "type": "SingleColumnLayout",
+            "children": [{
+                "type": "Form",
+                "name": "form",
+                "children": [{
+                    "type": "TextInput",
+                    "name": "nameAccount",
+                    "label": "Nombre",
+                    "input-type": "text",
+                    "required": true
+                }, {
+                    "type": "TextInput",
+                    "label": "Número de contacto",
+                    "name": "numberContact",
+                    "input-type": "number",
+                    "required": true,
+                    "helper-text": ""
+                }, {
+                    "type": "TextInput",
+                    "required": true,
+                    "label": "Correo Electronico",
+                    "name": "adress"
+                }, {
+                    "type": "TextArea",
+                    "label": "Descripción del problema",
+                    "required": false,
+                    "name": "description"
+                }, {
+                    "type": "Footer",
+                    "label": "Done",
+                    "on-click-action": {
+                        "name": "complete",
+                        "payload": {
+                            "nameAccount": "${form.nameAccount}",
+                            "adress": "${form.adress}",
+                            "numberContact": "${form.numberContact}",
+                            "description": "${form.description}"
+                        }
+                    }
+                }]
+            
+            }]
+        }
+    }]
+}
